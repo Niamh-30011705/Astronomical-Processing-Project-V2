@@ -1,8 +1,8 @@
-﻿// Niamh Cavanagh, Application Development Team, Sprint One
-// Date: 29 March 2025
-// Version: 1.2
-// Astronomical Processing
-// A Forms based program to demonstrate the Binary Search and Bubble Sort.
+﻿// Niamh Cavanagh, Application Development Team, Sprint Two
+// Date: 03 April 2025
+// Version: 2.0
+// Astronomical Processing V2
+// A Forms based program to demonstrate the Binary Search and Bubble Sort. Now also including Sequential Search and Mathematical Functions.
 
 // Inputs
 // Random Numbers (buttonGetData_Click): Generates random integers between 10 and 90 and fills the array.
@@ -12,6 +12,7 @@
 // TextBox (inputEdit): Used to input a new value to replace an existing value in the array (buttonEdit_Click).
 //                      The user edits an array element.
 // ListBox (listBoxDisplay): The user selects an entry from the list to edit or view its value (listBoxDisplay_Click).
+
 // Processes
 // Data Initialization (buttonGetData_Click): Fills the array with random integers between 10 and 90 using rand.Next(10, 91).
 // Display Data (DisplayArray): Clears the ListBox (listBoxDisplay) and displays the current values of the array.
@@ -27,6 +28,7 @@
 // Edit Button (buttonEdit_Click): Updates the selected entry in the array with a new value entered in inputEdit.
 //                                 The array is then re-displayed.
 // Closing the Program (buttonQuit_Click): Closes the application when the "Quit" button is clicked.
+
 // Outputs
     // Display of Array (DisplayArray): Updates the ListBox (listBoxDisplay) to show the current contents of the array
     //                                  whenever it is called.

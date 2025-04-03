@@ -8,3 +8,13 @@ C:\Users\niamh\Documents\GitHub\AT2-Astronomical-Processing-Project\AT2-Astronom
 C:\Users\niamh\Documents\GitHub\AT2-Astronomical-Processing-Project\AT2-Astronomical-Processing_Sln\Astronomical Processing\obj\Debug\Astronomical Processing.csproj.CoreCompileInputs.cache
 C:\Users\niamh\Documents\GitHub\AT2-Astronomical-Processing-Project\AT2-Astronomical-Processing_Sln\Astronomical Processing\obj\Debug\Astronomical Processing.exe
 C:\Users\niamh\Documents\GitHub\AT2-Astronomical-Processing-Project\AT2-Astronomical-Processing_Sln\Astronomical Processing\obj\Debug\Astronomical Processing.pdb
+C:\Users\30011705\Documents\GitHub\Astronomical-Processing-Project-V2\AT2-Astronomical-Processing_Sln\Astronomical Processing\bin\Debug\Astronomical Processing.exe.config
+C:\Users\30011705\Documents\GitHub\Astronomical-Processing-Project-V2\AT2-Astronomical-Processing_Sln\Astronomical Processing\bin\Debug\Astronomical Processing.exe
+C:\Users\30011705\Documents\GitHub\Astronomical-Processing-Project-V2\AT2-Astronomical-Processing_Sln\Astronomical Processing\bin\Debug\Astronomical Processing.pdb
+C:\Users\30011705\Documents\GitHub\Astronomical-Processing-Project-V2\AT2-Astronomical-Processing_Sln\Astronomical Processing\obj\Debug\Astronomical Processing.csproj.AssemblyReference.cache
+C:\Users\30011705\Documents\GitHub\Astronomical-Processing-Project-V2\AT2-Astronomical-Processing_Sln\Astronomical Processing\obj\Debug\Astronomical_Processing.Form1.resources
+C:\Users\30011705\Documents\GitHub\Astronomical-Processing-Project-V2\AT2-Astronomical-Processing_Sln\Astronomical Processing\obj\Debug\Astronomical_Processing.Properties.Resources.resources
+C:\Users\30011705\Documents\GitHub\Astronomical-Processing-Project-V2\AT2-Astronomical-Processing_Sln\Astronomical Processing\obj\Debug\Astronomical Processing.csproj.GenerateResource.cache
+C:\Users\30011705\Documents\GitHub\Astronomical-Processing-Project-V2\AT2-Astronomical-Processing_Sln\Astronomical Processing\obj\Debug\Astronomical Processing.csproj.CoreCompileInputs.cache
+C:\Users\30011705\Documents\GitHub\Astronomical-Processing-Project-V2\AT2-Astronomical-Processing_Sln\Astronomical Processing\obj\Debug\Astronomical Processing.exe
+C:\Users\30011705\Documents\GitHub\Astronomical-Processing-Project-V2\AT2-Astronomical-Processing_Sln\Astronomical Processing\obj\Debug\Astronomical Processing.pdb
