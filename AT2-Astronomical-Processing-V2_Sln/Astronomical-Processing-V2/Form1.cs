@@ -1,54 +1,64 @@
 ﻿// Niamh Cavanagh, Application Development Team, Sprint Two
-// Date: 05 April 2025
+// Date: 06 April 2025
 // Version: 2.2
 // Astronomical Prrocessing V2
 // A forms based program to demonstrate the Binary Search and Bubble Sort. Now including the Sequential Search and some Mathematical Functions.
 
 // Inputs
-    // Random Numbers (buttonGetData_Click): Generates random integers between 10 and 90 and fills the array.
-    // User Inputs:
-    // TextBox (inputBinarySearch): Used to input the search term for the binary search (buttonBinarySearch_Click).
-    //                              The user inputs an integer to be searched in the array.
-    // TextBox (inputSequentialSearch): Used to input the search term for the sequential search (buttonSequentialSearch_Click).
-    //                                  The user inputs an integer to be searched in the array.
-    // TextBox (inputEdit): Used to input a new value to replace an existing value in the array (buttonEdit_Click).
-    //                      The user edits an array element.
-    // ListBox (listBoxDisplay): The user selects an entry from the list to edit or view its value (listBoxDisplay_Click).
+//  Random Numbers (buttonGetData_Click): Generates random integers between 10 and 90 and fills the array.
+//  User Inputs:
+//      TextBox (inputBinarySearch): Used to input the search term for the binary search (buttonBinarySearch_Click).
+//                                   The user inputs an integer to be searched in the array.
+//      TextBox (inputSequentialSearch): Used to input the search term for the sequential search (buttonSequentialSearch_Click).
+//                                       The user inputs an integer to be searched in the array.
+//      TextBox (inputEdit): Used to input a new value to replace an existing value in the array (buttonEdit_Click).
+//                           The user edits an array element.
+//      ListBox (listBoxDisplay): The user selects an entry from the list to edit or view its value (listBoxDisplay_Click).
 
 // Processes
-    // Data Initialization (buttonGetData_Click): Fills the array with random integers between 10 and 90 using rand.Next(10, 91).
-    // Display Data (DisplayArray): Clears the ListBox (listBoxDisplay) and displays the current values of the array.
-    // Sorting (buttonSort_Click): Implements a Bubble Sort alorithm to sort the array is ascending order. It
-    //                             repeatedly compares adjacent elements and swaps them if they are out of
-    //                             order. After each pass, the list is partially sorted.
-    // Searching (buttonBinarySearch_Click): Performs a binary search to find a target value (inputBinarySearch.Text). It compares
-    //                                       the value with the middle of the array and keeps dividing the array into two
-    //                                       halves until the target is found or the range is exhausted.
-    // Searching (buttonSequentialSearch_Click): Performs a sequential seach to find a target value (inputSequentialSearch.Text). It
-    //                                           checks each element one by one from the beginning to the end until the target is
-    //                                           found or reaching the end of the array.
-    // Editing Data:
-    // ListBox (listBoxDisplay_Click): When an item in the List Box is clicked, it displays the selected item in the
-    //                                 inputEdit textbox for editing.
-    // Edit Button (buttonEdit_Click): Updates the selected entry in the array with a new value entered in inputEdit.
-    //                                 The array is then re-displayed.
-    // Closing the Program (buttonQuit_Click): Closes the application when the "Quit" button is clicked.
+//  Data Initialization (buttonGetData_Click): Fills the array with random integers between 10 and 90 using rand.Next(10, 91).
+//  Display Data (DisplayArray): Clears the ListBox (listBoxDisplay) and displays the current values of the array.
+//  Sorting (buttonSort_Click): Implements a Bubble Sort alorithm to sort the array is ascending order. It
+//                              repeatedly compares adjacent elements and swaps them if they are out of
+//                              order. After each pass, the list is partially sorted.
+//  Searching:
+//      Binary Search Button (buttonBinarySearch_Click): Performs a binary search to find a target value (inputBinarySearch.Text). It compares
+//                                                       the value with the middle of the array and keeps dividing the array into two
+//                                                       halves until the target is found or the range is exhausted.
+//      Sequential Search Button (buttonSequentialSearch_Click): Performs a sequential seach to find a target value (inputSequentialSearch.Text). It
+//                                                               checks each element one by one from the beginning to the end until the target is
+//                                                               found or reaching the end of the array.
+//  Editing Data:
+//      ListBox (listBoxDisplay_Click): When an item in the List Box is clicked, it displays the selected item in the
+//                                      inputEdit textbox for editing.
+//      Edit Button (buttonEdit_Click): Updates the selected entry in the array with a new value entered in inputEdit.
+//                                      The array is then re-displayed.
+//  Mathematical Functions:
+//      Mid-Extreme (buttonMidExtreme_Click): The mid-extreme is defined as the sum of the smallest value and the largest value in the given data set divided by 2.
+//      Mode (buttonMode_Click): The mode is defined as the number that appears most frequently in a set of data (unimodal).
+//      Average (buttonAverage_Click): The average is defined as the sum of all the values divided by the total number of values in the data set.
+//      Range (buttonRange_Click): The range is defined as the difference between the largest and the smallest values in the data set.
+//  Closing the Program (buttonQuit_Click): Closes the application when the "Quit" button is clicked.
 
 // Outputs
-    // Display of Array (DisplayArray): Updates the ListBox (listBoxDisplay) to show the current contents of the array
-    //                                  whenever it is called.
-    // Messages: Success or error messages are shown in the message box
-    //           (e.g., "Bubble Sort Complete", "Binary Search Successful", "Data updated successfully", etc.).
-    // ListBox Selection: When an item in the ListBox is clicked (listBoxDisplay_Click), the corresponding value is displayed
-    //                    in the inputEdit TextBox.
-    // Binary Search Results: The binary search results are shown in the messageBox. If the target is found, the message says
-    //                        "Binary Search Successful" along with the index. If not found, it displays "Binary Search item not found".
-    // Sequential Search Results: The sequential search results are shown in the messageBox. If the target is found, the message
-    //                            says "Sequential Search Successful" along with the index. If not found, it displays "Sequential
-    //                            Search item not found".
-    // Edit Results: When the data is successfully edited, the ListBox is refreshed with the updated value, and the message
-    //               "Data updated successfully!" is shown.
-    // Application Termination: The program closes when buttonQuit_Click is triggered.
+//  Display of Array (DisplayArray): Updates the ListBox (listBoxDisplay) to show the current contents of the array
+//                                   whenever it is called.
+//  Messages: Success or error messages are shown in the message box
+//            (e.g., "Bubble Sort Complete", "Binary Search Successful", "Data updated successfully", etc.).
+//  ListBox Selection: When an item in the ListBox is clicked (listBoxDisplay_Click), the corresponding value is displayed
+//                     in the inputEdit TextBox.
+//  Binary Search Results: The binary search results are shown in the messageBox. If the target is found, the message says
+//                         "Binary Search Successful" along with the index. If not found, it displays "Binary Search item not found".
+//  Sequential Search Results: The sequential search results are shown in the messageBox. If the target is found, the message
+//                             says "Sequential Search Successful" along with the index. If not found, it displays "Sequential
+//                             Search item not found".
+//  Edit Results: When the data is successfully edited, the ListBox is refreshed with the updated value, and the message
+//                "Data updated successfully!" is shown.
+//  Mid-Extreme Results: The Mid-Extreme results are shown in the applicable read only textbox (resultMidExtreme.Text).
+//  Mode Results: The Mode results are shown in the applicable read only textbox (resultMode.Text).
+//  Average Results: The Average results are shown in the applicable read only textbox (resultAverage.Text).
+//  Range Results: The Range results are shown in the applicable read only textbox (resultRange.Text).
+//  Application Termination: The program closes when buttonQuit_Click is triggered.
 
 using System;
 using System.Collections.Generic;
