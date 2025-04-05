@@ -54,8 +54,9 @@
             // 
             // listBoxDisplay
             // 
+            this.listBoxDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.listBoxDisplay.FormattingEnabled = true;
-            this.listBoxDisplay.ItemHeight = 16;
+            this.listBoxDisplay.ItemHeight = 20;
             this.listBoxDisplay.Location = new System.Drawing.Point(12, 13);
             this.listBoxDisplay.Name = "listBoxDisplay";
             this.listBoxDisplay.Size = new System.Drawing.Size(102, 484);
@@ -204,34 +205,38 @@
             // 
             // resultMidExtreme
             // 
-            this.resultMidExtreme.Location = new System.Drawing.Point(220, 227);
+            this.resultMidExtreme.Location = new System.Drawing.Point(220, 216);
+            this.resultMidExtreme.Multiline = true;
             this.resultMidExtreme.Name = "resultMidExtreme";
             this.resultMidExtreme.ReadOnly = true;
-            this.resultMidExtreme.Size = new System.Drawing.Size(143, 23);
+            this.resultMidExtreme.Size = new System.Drawing.Size(143, 45);
             this.resultMidExtreme.TabIndex = 16;
             // 
             // resultMode
             // 
-            this.resultMode.Location = new System.Drawing.Point(220, 278);
+            this.resultMode.Location = new System.Drawing.Point(220, 267);
+            this.resultMode.Multiline = true;
             this.resultMode.Name = "resultMode";
             this.resultMode.ReadOnly = true;
-            this.resultMode.Size = new System.Drawing.Size(143, 23);
+            this.resultMode.Size = new System.Drawing.Size(143, 45);
             this.resultMode.TabIndex = 17;
             // 
             // resultAverage
             // 
-            this.resultAverage.Location = new System.Drawing.Point(220, 329);
+            this.resultAverage.Location = new System.Drawing.Point(220, 318);
+            this.resultAverage.Multiline = true;
             this.resultAverage.Name = "resultAverage";
             this.resultAverage.ReadOnly = true;
-            this.resultAverage.Size = new System.Drawing.Size(143, 23);
+            this.resultAverage.Size = new System.Drawing.Size(143, 45);
             this.resultAverage.TabIndex = 18;
             // 
             // resultRange
             // 
-            this.resultRange.Location = new System.Drawing.Point(220, 380);
+            this.resultRange.Location = new System.Drawing.Point(220, 369);
+            this.resultRange.Multiline = true;
             this.resultRange.Name = "resultRange";
             this.resultRange.ReadOnly = true;
-            this.resultRange.Size = new System.Drawing.Size(143, 23);
+            this.resultRange.Size = new System.Drawing.Size(143, 45);
             this.resultRange.TabIndex = 19;
             // 
             // textToolTips

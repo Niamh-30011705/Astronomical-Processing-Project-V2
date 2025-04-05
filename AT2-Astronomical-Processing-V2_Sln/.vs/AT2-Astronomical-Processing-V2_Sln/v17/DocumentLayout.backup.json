@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\niamh\\Documents\\GitHub\\AT2-Astronomical-Processing-Project-V2\\AT2-Astronomical-Processing-V2_Sln\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{716A63ED-A458-47E5-95CB-68178797C0F7}|Astronomical-Processing-V2\\Astronomical-Processing-V2.csproj|c:\\users\\niamh\\documents\\github\\at2-astronomical-processing-project-v2\\at2-astronomical-processing-v2_sln\\astronomical-processing-v2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{716A63ED-A458-47E5-95CB-68178797C0F7}|Astronomical-Processing-V2\\Astronomical-Processing-V2.csproj|solutionrelative:astronomical-processing-v2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{716A63ED-A458-47E5-95CB-68178797C0F7}|Astronomical-Processing-V2\\Astronomical-Processing-V2.csproj|C:\\Users\\niamh\\Documents\\GitHub\\AT2-Astronomical-Processing-Project-V2\\AT2-Astronomical-Processing-V2_Sln\\astronomical-processing-v2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{716A63ED-A458-47E5-95CB-68178797C0F7}|Astronomical-Processing-V2\\Astronomical-Processing-V2.csproj|solutionrelative:astronomical-processing-v2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{716A63ED-A458-47E5-95CB-68178797C0F7}|Astronomical-Processing-V2\\Astronomical-Processing-V2.csproj|c:\\users\\niamh\\documents\\github\\at2-astronomical-processing-project-v2\\at2-astronomical-processing-v2_sln\\astronomical-processing-v2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{716A63ED-A458-47E5-95CB-68178797C0F7}|Astronomical-Processing-V2\\Astronomical-Processing-V2.csproj|solutionrelative:astronomical-processing-v2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,24 +18,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\niamh\\Documents\\GitHub\\AT2-Astronomical-Processing-Project-V2\\AT2-Astronomical-Processing-V2_Sln\\Astronomical-Processing-V2\\Form1.cs",
               "RelativeDocumentMoniker": "Astronomical-Processing-V2\\Form1.cs",
               "ToolTip": "C:\\Users\\niamh\\Documents\\GitHub\\AT2-Astronomical-Processing-Project-V2\\AT2-Astronomical-Processing-V2_Sln\\Astronomical-Processing-V2\\Form1.cs",
               "RelativeToolTip": "Astronomical-Processing-V2\\Form1.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAkwI0AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAgwGgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-05T03:34:59.862Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\niamh\\Documents\\GitHub\\AT2-Astronomical-Processing-Project-V2\\AT2-Astronomical-Processing-V2_Sln\\Astronomical-Processing-V2\\Form1.cs",
               "RelativeDocumentMoniker": "Astronomical-Processing-V2\\Form1.cs",

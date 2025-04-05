@@ -1,6 +1,6 @@
 ﻿// Niamh Cavanagh, Application Development Team, Sprint Two
 // Date: 05 April 2025
-// Version: 2.1
+// Version: 2.2
 // Astronomical Prrocessing V2
 // A forms based program to demonstrate the Binary Search and Bubble Sort. Now including the Sequential Search and some Mathematical Functions.
 
@@ -54,6 +54,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -100,6 +101,8 @@ namespace Astronomical_Processing_V2
                 myArray[i] = rand.Next(10, 91); // 91 is exclusive, so this gives a range from 10 to 90
             }
             DisplayArray();
+            // Clear messageBox
+            messageBox.Clear();
         }
 
         // Method to perform Bubble Sort on button click
@@ -192,16 +195,16 @@ namespace Astronomical_Processing_V2
             if (!(Int32.TryParse(inputSequentialSearch.Text, out int target)))
             {
                 // Display error message to user
-                messageBox.Text = "Input is invalid or textbox is expty. Please enter an integer before searching.";
+                messageBox.Text = "Input is invalid or textbox is empty. Please enter an integer before searching.";
                 return;
             }
             // Sequential Search
-            for (int k = 0; k < arraySize; k++)
+            for (int i = 0; i < arraySize; i++)
             {
-                if (target == myArray[k])
+                if (target == myArray[i])
                 {
                     // Display success message to user
-                    messageBox.Text = "Sequential Search Successful: " + target + " Found at index " + k;
+                    messageBox.Text = "Sequential Search Successful: " + target + " Found at index " + i;
                     found = true;
                     break;
                 }
@@ -280,25 +283,151 @@ namespace Astronomical_Processing_V2
         // Method to calculate the Mid-Extreme of the data on button click
         private void buttonMidExtreme_Click(object sender, EventArgs e)
         {
-
+            // Check if the list box is empty
+            if (myArray.Length == 0 || listBoxDisplay.Items.Count == 0)
+            {
+                resultMidExtreme.Text = " ";
+                messageBox.Text = "ListBox is empty. Please click Get Data before performing a calculation.";
+                return;
+            }
+            // Find the minimum and maximum values in the array
+            int min = myArray[0];
+            int max = myArray[0];
+            for (int i = 1; i < arraySize; i++)
+            {
+                if (myArray[i] < min)
+                {
+                    min = myArray[i];
+                }
+                if (myArray[i] > max)
+                {
+                    max = myArray[i];
+                }
+            }
+            // Calculate the Mid-Extreme
+            double midEx = (min + max) / 2.0; // Use 2.0 to ensure the result is a floating-point number
+            // Display result formatted to 2 decimal places or less as applicable to result
+            resultMidExtreme.Text = "Mid-Extreme: " + midEx.ToString("0.##");
         }
 
         // Method to calculate the Mode of the data on button click
         private void buttonMode_Click(object sender, EventArgs e)
         {
+            // Check if the list box is empty
+            if (myArray.Length == 0 || listBoxDisplay.Items.Count == 0)
+            {
+                resultMode.Text = " ";
+                messageBox.Text = "ListBox is empty. Please click Get Data before performing a calculation.";
+                return;
+            }
+            // Track the frequency of the most frequent element
+            int frequency = 1;
+            // Create a list to store all modes
+            List<int> modes = new List<int>();
+            int counter;
 
+            // Variable to check if all elements occur only once
+            bool allElementsOnce = true;
+
+            for (int i = 0; i < arraySize; i++)
+            {
+                counter = 0;
+                int element = myArray[i];
+                // Count occurrences of the current element
+                for (int j = 0; j < arraySize; j++)
+                {
+                    if (element == myArray[j])
+                    {
+                        counter++;
+                    }
+                }
+                // If any element appears more than once, we can say there's a mode
+                if (counter > 1)
+                {
+                    allElementsOnce = false;
+                }
+                // If the counter exceeds the current frequency, update the frequency and clear the modes list
+                if (counter > frequency)
+                {
+                    frequency = counter;
+                    modes.Clear(); // Clear previous modes
+                    modes.Add(element); // Add the new mode
+                }
+                // If the counter equals the current frequency, add it to the modes list (if not already there)
+                else if (counter == frequency && !modes.Contains(element))
+                {
+                    modes.Add(element);
+                }
+            }
+            // Check if all elements occurred only once
+            if (allElementsOnce)
+            {
+                resultMode.Text = "No mode (All elements occur only once)";
+            }
+            else
+            {
+                // Display result
+                if (modes.Count == 1)
+                {
+                    resultMode.Text = $"{modes[0]}\r\nOccurs: {frequency}";
+                }
+                else
+                {
+                    resultMode.Text = $"{string.Join(", ", modes)}\r\nOccurs: {frequency}";
+                }
+            }
         }
 
         // Method to calculate the Average of the data on button click
         private void buttonAverage_Click(object sender, EventArgs e)
         {
-
+            // Check if the list box is empty
+            if (myArray.Length == 0 || listBoxDisplay.Items.Count == 0)
+            {
+                resultAverage.Text = " ";
+                messageBox.Text = "ListBox is empty. Please click Get Data before performing a calculation.";
+                return;
+            }
+            // Calculate the sum of all elements
+            int sum = 0;
+            foreach (int num in myArray)
+            {
+                sum += num;
+            }
+            // Calculate the average
+            double average = (double)sum / arraySize;
+            // Display result formatted to 2 decimal places or less as applicable to result
+            resultAverage.Text = "Average: " + average.ToString("0.##");
         }
 
         // Method to calculate the Range of the data on button click
         private void buttonRange_Click(object sender, EventArgs e)
         {
-
+            // Check if the list box is empty
+            if (myArray.Length == 0 || listBoxDisplay.Items.Count == 0)
+            {
+                resultRange.Text = " ";
+                messageBox.Text = "ListBox is empty. Please click Get Data before performing a calculation.";
+                return;
+            }
+            // Find the minimum and maximum values in the array
+            int min = myArray[0];
+            int max = myArray[0];
+            for (int i = 1; i < arraySize; i++)
+            {
+                if (myArray[i] < min)
+                {
+                    min = myArray[i];
+                }
+                if (myArray[i] > max)
+                {
+                    max = myArray[i];
+                }
+            }
+            // Calculate the range
+            int range = max - min;
+            // Display result
+            resultRange.Text = "Range: " + range;
         }
 
         // Method to quit and close the program on button click
