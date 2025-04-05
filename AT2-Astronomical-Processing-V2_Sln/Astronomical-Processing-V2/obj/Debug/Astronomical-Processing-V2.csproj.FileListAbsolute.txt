@@ -1,0 +1,10 @@
+C:\Users\niamh\Documents\GitHub\AT2-Astronomical-Processing-Project-V2\AT2-Astronomical-Processing-V2_Sln\Astronomical-Processing-V2\bin\Debug\Astronomical-Processing-V2.exe.config
+C:\Users\niamh\Documents\GitHub\AT2-Astronomical-Processing-Project-V2\AT2-Astronomical-Processing-V2_Sln\Astronomical-Processing-V2\bin\Debug\Astronomical-Processing-V2.exe
+C:\Users\niamh\Documents\GitHub\AT2-Astronomical-Processing-Project-V2\AT2-Astronomical-Processing-V2_Sln\Astronomical-Processing-V2\bin\Debug\Astronomical-Processing-V2.pdb
+C:\Users\niamh\Documents\GitHub\AT2-Astronomical-Processing-Project-V2\AT2-Astronomical-Processing-V2_Sln\Astronomical-Processing-V2\obj\Debug\Astronomical-Processing-V2.csproj.AssemblyReference.cache
+C:\Users\niamh\Documents\GitHub\AT2-Astronomical-Processing-Project-V2\AT2-Astronomical-Processing-V2_Sln\Astronomical-Processing-V2\obj\Debug\Astronomical_Processing_V2.Form1.resources
+C:\Users\niamh\Documents\GitHub\AT2-Astronomical-Processing-Project-V2\AT2-Astronomical-Processing-V2_Sln\Astronomical-Processing-V2\obj\Debug\Astronomical_Processing_V2.Properties.Resources.resources
+C:\Users\niamh\Documents\GitHub\AT2-Astronomical-Processing-Project-V2\AT2-Astronomical-Processing-V2_Sln\Astronomical-Processing-V2\obj\Debug\Astronomical-Processing-V2.csproj.GenerateResource.cache
+C:\Users\niamh\Documents\GitHub\AT2-Astronomical-Processing-Project-V2\AT2-Astronomical-Processing-V2_Sln\Astronomical-Processing-V2\obj\Debug\Astronomical-Processing-V2.csproj.CoreCompileInputs.cache
+C:\Users\niamh\Documents\GitHub\AT2-Astronomical-Processing-Project-V2\AT2-Astronomical-Processing-V2_Sln\Astronomical-Processing-V2\obj\Debug\Astronomical-Processing-V2.exe
+C:\Users\niamh\Documents\GitHub\AT2-Astronomical-Processing-Project-V2\AT2-Astronomical-Processing-V2_Sln\Astronomical-Processing-V2\obj\Debug\Astronomical-Processing-V2.pdb

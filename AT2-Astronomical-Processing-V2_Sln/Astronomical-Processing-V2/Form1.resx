@@ -129,9 +129,11 @@ Click to sort the data in acending order using the Bubble Sort method.
 
      Binary Search:
 Click inside the textbox to the right of the button, type the number you wish to search for, then click the button to search for the number you entered using the Binary Search method.
+Note: Binary search relies on the data being sorted first, make sure to click the "Sort Data" button before trying to use this search method.
 
      Sequential Search:
 Click inside the textbox to the right of the button, type the number you wish to search for, then click the button to search for the number you entered using the Sequential Search method.
+Note: Sequential search does NOT require the data to be sorted before searching.
 
      Edit Data:
 Click on the data entry in the data list you wish to edit, the data entry you clicked should appear in the textbox to the right of the "Edit Data" button, type the number you wish to change the data entry too, then click the button to update the data entry and reload the data list.

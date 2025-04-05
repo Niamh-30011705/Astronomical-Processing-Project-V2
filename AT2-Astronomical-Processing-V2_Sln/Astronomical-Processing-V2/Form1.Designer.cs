@@ -60,6 +60,7 @@
             this.listBoxDisplay.Name = "listBoxDisplay";
             this.listBoxDisplay.Size = new System.Drawing.Size(102, 484);
             this.listBoxDisplay.TabIndex = 0;
+            this.listBoxDisplay.Click += new System.EventHandler(this.listBoxDisplay_Click);
             // 
             // buttonQuit
             // 

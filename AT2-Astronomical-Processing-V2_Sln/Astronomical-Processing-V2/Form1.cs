@@ -1,6 +1,6 @@
 ﻿// Niamh Cavanagh, Application Development Team, Sprint Two
 // Date: 05 April 2025
-// Version: 2.0
+// Version: 2.1
 // Astronomical Prrocessing V2
 // A forms based program to demonstrate the Binary Search and Bubble Sort. Now including the Sequential Search and some Mathematical Functions.
 
@@ -9,6 +9,8 @@
     // User Inputs:
     // TextBox (inputBinarySearch): Used to input the search term for the binary search (buttonBinarySearch_Click).
     //                              The user inputs an integer to be searched in the array.
+    // TextBox (inputSequentialSearch): Used to input the search term for the sequential search (buttonSequentialSearch_Click).
+    //                                  The user inputs an integer to be searched in the array.
     // TextBox (inputEdit): Used to input a new value to replace an existing value in the array (buttonEdit_Click).
     //                      The user edits an array element.
     // ListBox (listBoxDisplay): The user selects an entry from the list to edit or view its value (listBoxDisplay_Click).
@@ -22,6 +24,9 @@
     // Searching (buttonBinarySearch_Click): Performs a binary search to find a target value (inputBinarySearch.Text). It compares
     //                                       the value with the middle of the array and keeps dividing the array into two
     //                                       halves until the target is found or the range is exhausted.
+    // Searching (buttonSequentialSearch_Click): Performs a sequential seach to find a target value (inputSequentialSearch.Text). It
+    //                                           checks each element one by one from the beginning to the end until the target is
+    //                                           found or reaching the end of the array.
     // Editing Data:
     // ListBox (listBoxDisplay_Click): When an item in the List Box is clicked, it displays the selected item in the
     //                                 inputEdit textbox for editing.
@@ -36,8 +41,11 @@
     //           (e.g., "Bubble Sort Complete", "Binary Search Successful", "Data updated successfully", etc.).
     // ListBox Selection: When an item in the ListBox is clicked (listBoxDisplay_Click), the corresponding value is displayed
     //                    in the inputEdit TextBox.
-    // Search Results: The binary search results are shown in the messageBox. If the target is found, the message says
-    //                 "Binary Search Successful" along with the index. If not found, it displays "Binary Search item not Found".
+    // Binary Search Results: The binary search results are shown in the messageBox. If the target is found, the message says
+    //                        "Binary Search Successful" along with the index. If not found, it displays "Binary Search item not found".
+    // Sequential Search Results: The sequential search results are shown in the messageBox. If the target is found, the message
+    //                            says "Sequential Search Successful" along with the index. If not found, it displays "Sequential
+    //                            Search item not found".
     // Edit Results: When the data is successfully edited, the ListBox is refreshed with the updated value, and the message
     //               "Data updated successfully!" is shown.
     // Application Termination: The program closes when buttonQuit_Click is triggered.
@@ -123,6 +131,23 @@ namespace Astronomical_Processing_V2
         // Method to perform Binary Search on button click
         private void buttonBinarySearch_Click(object sender, EventArgs e)
         {
+            // Check if the array is sorted
+            bool isSorted = true;
+            for (int i = 0; i < arraySize - 1; i++)
+            {
+                if (myArray[i] > myArray[i + 1])
+                {
+                    isSorted = false;
+                    break;
+                }
+            }
+            // If the array is not sorted, display message to user
+            if (!isSorted)
+            {
+                messageBox.Text = "The data is not sorted. Binary Search relies on the data being sorted. Please click Sort Data and try again.";
+                return;
+            }
+            
             int min = 0;
             int max = arraySize - 1;
             // Catch error for non integer input
@@ -162,7 +187,39 @@ namespace Astronomical_Processing_V2
         // Method to perform Sequential Search on button click
         private void buttonSequentialSearch_Click(object sender, EventArgs e)
         {
-
+            bool found = false;
+            // Catch error for non integer input
+            if (!(Int32.TryParse(inputSequentialSearch.Text, out int target)))
+            {
+                // Display error message to user
+                messageBox.Text = "Input is invalid or textbox is expty. Please enter an integer before searching.";
+                return;
+            }
+            // Sequential Search
+            for (int k = 0; k < arraySize; k++)
+            {
+                if (target == myArray[k])
+                {
+                    // Display success message to user
+                    messageBox.Text = "Sequential Search Successful: " + target + " Found at index " + k;
+                    found = true;
+                    break;
+                }
+                else
+                {
+                    // Display error message to user
+                    messageBox.Text = "Sequential Search item not found, please try again.";
+                    inputSequentialSearch.Clear();
+                    inputSequentialSearch.Focus();
+                }
+            }
+            if (!found)
+            {
+                // Display error message to user
+                messageBox.Text = "Sequential Search item not found, please try again.";
+                inputSequentialSearch.Clear();
+                inputSequentialSearch.Focus();
+            }
         }
 
         // Method to select an entry for editing in the listbox
