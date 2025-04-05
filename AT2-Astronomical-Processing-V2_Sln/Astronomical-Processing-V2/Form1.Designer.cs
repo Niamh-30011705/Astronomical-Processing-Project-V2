@@ -70,6 +70,7 @@
             this.buttonQuit.TabIndex = 2;
             this.buttonQuit.Text = "Quit";
             this.buttonQuit.UseVisualStyleBackColor = true;
+            this.buttonQuit.Click += new System.EventHandler(this.buttonQuit_Click);
             // 
             // buttonGetData
             // 
@@ -80,6 +81,7 @@
             this.buttonGetData.TabIndex = 3;
             this.buttonGetData.Text = "Get Data";
             this.buttonGetData.UseVisualStyleBackColor = true;
+            this.buttonGetData.Click += new System.EventHandler(this.buttonGetData_Click);
             // 
             // buttonSort
             // 
@@ -90,6 +92,7 @@
             this.buttonSort.TabIndex = 4;
             this.buttonSort.Text = "Sort Data";
             this.buttonSort.UseVisualStyleBackColor = true;
+            this.buttonSort.Click += new System.EventHandler(this.buttonSort_Click);
             // 
             // buttonBinarySearch
             // 
@@ -100,6 +103,7 @@
             this.buttonBinarySearch.TabIndex = 5;
             this.buttonBinarySearch.Text = "Binary Search";
             this.buttonBinarySearch.UseVisualStyleBackColor = true;
+            this.buttonBinarySearch.Click += new System.EventHandler(this.buttonBinarySearch_Click);
             // 
             // buttonSequentialSearch
             // 
@@ -110,6 +114,7 @@
             this.buttonSequentialSearch.TabIndex = 6;
             this.buttonSequentialSearch.Text = "Sequential Search";
             this.buttonSequentialSearch.UseVisualStyleBackColor = true;
+            this.buttonSequentialSearch.Click += new System.EventHandler(this.buttonSequentialSearch_Click);
             // 
             // buttonEdit
             // 
@@ -120,6 +125,7 @@
             this.buttonEdit.TabIndex = 7;
             this.buttonEdit.Text = "Edit Data";
             this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonMidExtreme
             // 
@@ -130,6 +136,7 @@
             this.buttonMidExtreme.TabIndex = 8;
             this.buttonMidExtreme.Text = "Mid-Extreme";
             this.buttonMidExtreme.UseVisualStyleBackColor = true;
+            this.buttonMidExtreme.Click += new System.EventHandler(this.buttonMidExtreme_Click);
             // 
             // buttonMode
             // 
@@ -140,6 +147,7 @@
             this.buttonMode.TabIndex = 9;
             this.buttonMode.Text = "Mode";
             this.buttonMode.UseVisualStyleBackColor = true;
+            this.buttonMode.Click += new System.EventHandler(this.buttonMode_Click);
             // 
             // buttonAverage
             // 
@@ -150,6 +158,7 @@
             this.buttonAverage.TabIndex = 10;
             this.buttonAverage.Text = "Average";
             this.buttonAverage.UseVisualStyleBackColor = true;
+            this.buttonAverage.Click += new System.EventHandler(this.buttonAverage_Click);
             // 
             // buttonRange
             // 
@@ -160,6 +169,7 @@
             this.buttonRange.TabIndex = 11;
             this.buttonRange.Text = "Range";
             this.buttonRange.UseVisualStyleBackColor = true;
+            this.buttonRange.Click += new System.EventHandler(this.buttonRange_Click);
             // 
             // messageBox
             // 
